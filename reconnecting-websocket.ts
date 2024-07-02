@@ -127,6 +127,10 @@ export default class ReconnectingWebSocket {
         }
     }
 
+    set shouldReconnect(value: boolean) {
+        this._shouldReconnect = value;
+    }
+
     /**
      * Returns the number or connection retries
      */
